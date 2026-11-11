@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building Registration Form'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Testing Registration Form'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Registration Form Deployed Successfully'
+            }
+        }
+    }
+}
